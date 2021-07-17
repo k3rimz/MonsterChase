@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     private string ground_tag = "Ground";
 
     private string enemy_tag = "Enemy";
+    
 
 
     private void awake()
@@ -72,10 +73,12 @@ public class Player : MonoBehaviour
         if (movementX > 0)
         {
             anim.SetBool("walk", true);
+            sr.flipX = false;
         }
         else if (movementX < 0)
         {
             anim.SetBool("walk", true);
+            sr.flipX = true;
         }
         else
         {

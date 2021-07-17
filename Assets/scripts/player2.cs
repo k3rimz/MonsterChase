@@ -73,10 +73,13 @@ public class player2 : MonoBehaviour
         if (movementXP2 > 0)
         {
             animP2.SetBool(WALK_ANIMATIONP2, true);
+            srP2.flipX = false;
         }
         else if (movementXP2 < 0)
         {
             animP2.SetBool(WALK_ANIMATIONP2, true);
+            srP2.flipX = true;
+
         }
         else
         {
